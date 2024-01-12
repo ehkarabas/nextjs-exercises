@@ -1,0 +1,7 @@
+# https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+*.scss linguist-language=Sass
+*.sass linguist-language=Sass

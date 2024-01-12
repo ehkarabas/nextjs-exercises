@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Fira+Code:wght@400;700&family=IBM+Plex+Mono&family=Orbitron&family=Victor+Mono&display=swap");
+
+body {
+  min-height: 100vh;
+  font-family: "Lucida Console", monospace !important;
+}

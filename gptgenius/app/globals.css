@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Fira+Code:wght@400;700&family=IBM+Plex+Mono&family=Orbitron&family=Victor+Mono&display=swap");
+
+body {
+  min-height: 100vh;
+  font-family: "Lucida Console", monospace !important;
+}
+
+.cl-card {
+  margin-right: 0;
+}
+
+/* scrollbar ve bar için stiller */
+.gpt-messages::-webkit-scrollbar {
+  width: 5px; /* ya da istediğiniz genişlik */
+}
+
+/* Scrollbar bar'i için stil */
+.gpt-messages::-webkit-scrollbar-thumb {
+  background: #88888879; /* Kaydırma çubuğu rengi */
+  border-radius: 5px; /* Yuvarlatılmış köşeler */
+}
+
+/* Scrollbar bar'i hover stil */
+.gpt-messages::-webkit-scrollbar-thumb:hover {
+  background: #5555557c; /* Kaydırma çubuğu rengi üzerine gelindiğinde */
+}
+
+/* (İsteğe bağlı) Scrollbar için stil */
+.gpt-messages::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Rayın arka plan rengi */
+  border-radius: 5px; /* Yuvarlatılmış köşeler */
+}
+
+@media only screen and (min-width: 1200px) {
+  .gpt-prompt,
+  .gpt-messages {
+    min-width: 870px !important;
+    margin: auto !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /*Tailwind lg -> 1024px */
+  .cl-pageScrollBox {
+    padding: 2rem 1rem !important;
+  }
+
+  .cl-card {
+    margin: 0px 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+}

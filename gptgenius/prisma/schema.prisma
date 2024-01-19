@@ -1,0 +1,41 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model GptGeniusTour {
+  id String @id @default(uuid())
+  createadAt DateTime @default(now())
+  updatedAt DateTime @updatedAt 
+  city String
+  country String
+  title String
+  description String @db.Text
+  image String? @db.Text
+  stops Json
+  lang String
+  @@unique([city,country,lang])
+}
+
+model GptGeniusUserToken {
+  clerkId String @id
+  tokens Int @default (1000)
+  user   GptGeniusUser @relation(fields: [clerkId], references: [user_id])
+  @@index([clerkId])
+}
+
+model GptGeniusUser {
+  user_id String @id 
+  name    String?
+  email   String  @unique
+  token   GptGeniusUserToken?
+}

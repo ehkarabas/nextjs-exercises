@@ -5,7 +5,10 @@
 </div>
 
 <div align="center">
-	<a href="https://tasks-with-nextjs-ehkarabas-ii6irtqn2.vercel.app/">
+	<a href="https://tasks-with-nextjs-ehkarabas.vercel.app/">
 		<img src="https://img.shields.io/badge/tasks-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
+  <a href="https://gptgenius-ehkarabas.vercel.app/">
+		<img src="https://img.shields.io/badge/gptgenius-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
 </div>

@@ -11,4 +11,7 @@
   <a href="https://gptgenius-ehkarabas.vercel.app/">
 		<img src="https://img.shields.io/badge/gptgenius-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
 	</a>
+  <a href="https://jobify-ehkarabas.vercel.app/">
+		<img src="https://img.shields.io/badge/jobify-%23.svg?&style=for-the-badge&logo=www&logoColor=white%22&color=black">
+	</a>
 </div>
